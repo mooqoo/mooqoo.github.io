@@ -1,4 +1,11 @@
 /**
+ *
+ */
+.container {
+   
+}
+
+/**
  * Site footer
  */
 .site-footer {
@@ -76,7 +83,9 @@
 }
 
 .page-heading {
-    font-size: 20px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 40px;
 }
 
 .post-list {
@@ -86,6 +95,22 @@
     > li {
         margin-bottom: $spacing-unit;
     }
+
+    /**
+     *  post title with link
+     */
+    h2 {
+        a, a:visited {
+            color: #444;
+        }
+    }
+
+    /**
+     *  bootstrap button with link
+     */
+    a, a:visited {
+        color:#fff;
+    }
 }
 
 .post-meta {
@@ -94,8 +119,8 @@
 }
 
 .post-link {
-    display: block;
-    font-size: 24px;
+    display: inline-block;
+    font-size: 24px;    
 }
 
 

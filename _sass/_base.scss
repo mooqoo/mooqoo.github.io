@@ -1,29 +1,22 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
+/*
+h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
-
+*/
 
 
 /**
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
+    margin-top: 60px;
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -162,6 +155,8 @@ pre {
     padding-left: $spacing-unit;
     @extend %clearfix;
 
+    background-color: #0000ff;
+
     @include media-query($on-laptop) {
         max-width: -webkit-calc(800px - (#{$spacing-unit}));
         max-width:         calc(800px - (#{$spacing-unit}));
@@ -202,3 +197,4 @@ pre {
         }
     }
 }
+

@@ -1,15 +1,29 @@
-<header class="site-header">
+<header>
 
-  <div class="logo"> {% include icons/logo.html %} </div>
+	<div class='navbar navbar-inverse navbar-fixed-top'>
+      <div class='container'>
 
-  <nav>
-    <a href="">About Me</a>
-    <a href="">Work</a>
-    <a href="">Clients</a>
-    <a href="">Contact</a>
-  </nav>
-  
-  <h1> <span>Artists Theme</span> </h1>
-  <p class="kicker"> Thinker // Designer // YouTuber </p>  
+        <div class='navbar-header'>
+          <a href='/' class='navbar-brand' id='blog-title'>
+            MOOQOO
+          </a>
+          <!-- how to make the navbar-toggle move to the very left -->
+          <button type='button' class='navbar-toggle'
+                  data-toggle='collapse'
+                  data-target='.navbar-collapse'> 
+            <span class='sr-only'>Button</span> 
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+        </div>
 
+        <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+          <li><a href='about.html'>About me</a></li>
+          <li><a href='/'>Posts</a></li>
+          <!-- Github icon -->
+          <!-- Linkedin icon -->
+        </ul>
+      </div>
+    </div>
 </header>

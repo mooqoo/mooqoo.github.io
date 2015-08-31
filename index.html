@@ -2,23 +2,33 @@
 layout: default
 ---
 
-<div class="home">
+<!-- title for this page -->
+<h1 class="page-heading">Recent Posts</h1>
 
-  <h1 class="page-heading">Posts</h1>
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      
+      
+      <h2>
+        <!-- display post title and link to it -->
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>  
+        
+      <!-- display post date -->
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <!-- display post's excerpt -->
+      <p> {{ post.excerpt }}</p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <p> {{ post.content }}</p>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      <!-- button to read more -->
+      <a class="btn btn-primary" href="{{ post.url | prepend: site.baseurl }}">continue...</a>
+      
+      <!-- divider -->
+      <hr>
+   
+    </li>
+  {% endfor %}
+</ul>
 
-  
 
-</div>
